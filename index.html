@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./accsets/css/base.css"> 
+    <link rel="stylesheet" href="./accsets/css/main.css">
+    <link rel="stylesheet" href="./accsets/css/grid.css">
+    <link rel="stylesheet" href="./accsets/css/responsive.css">
+    <link rel="stylesheet" href="./accsets/fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./accsets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <!-- header -->
+        <div class="header">
+            <label for="header__menu-input" class="header__menu">      
+                <img class="header__menu-img" src="./accsets/img/menu.png" alt="menu">   
+            </label>
+    
+            <input type="checkbox" class="header__menu-check" hidden name="" id="header__menu-input">
+    
+            <label for="header__menu-input" class="header__menu-overlay">
+            </label>
+    
+            <nav class="header__menu-mobile">
+                <label for="header__menu-input" class="header__menu-close">
+                    <img class="header__menu-close-img" src="./accsets/img/close.png" alt="">
+                </label>
+                <div class="header__logo">
+                    <img src="./accsets/img/logo.jpg" alt="" class="header__logo-img">
+                    <span class="header__logo-name">
+                        Kiến thức số hunre
+                    </span>
+                </div>
+                <label for="header__menu-input" class="header__menu-list">
+                    <li class="header__menu-item" >
+                        Home
+                    </li>
+                    <li class="header__menu-item" >
+                        Thư viện
+                    </li>
+                    <!-- <li class="js-find-tutor-mobile header__menu-item" >
+                        Tìm gia sư
+                    </li>
+                    <li class="js-register-tutor-mobile header__menu-item" >
+                        Làm gia sư
+                    </li> -->
+
+                    <!-- <li class="js-sign-up-mobile header__menu-item" >
+                        Đăng ký
+                    </li>
+                    <li class="js-log-in-mobile header__menu-item" >
+                        Đăng nhập
+                    </li> -->
+                </label>
+            </nav> 
+            
+            <!--  -->
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item ">
+                            <a href="#" class="header__navbar-item-link">Trang chủ</a>
+                        </li>
+
+                        <li class="header__navbar-item ">
+                            <a href="#" class="header__navbar-item-link">Thư viện</a>
+                        </li>
+
+                        <!-- search -->
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm">
+                                <!-- Search history -->
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Tài liệu tham khảo tiếng anh 1</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Tài liệu tham khảo tiếng anh 2</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon ti-search"></i>
+                            </button>
+                        </div>
+                        <!-- <li class="js-find-tutor header__navbar-item">Tìm gia sư</li> -->
+                        <!-- <li class="js-register-tutor header__navbar-item">Làm gia sư</li> -->
+                    </ul>
+
+                    <ul class="header__navbar-list"> 
+                        <!-- header notify -->
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fas fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://cf.shopee.vn/file/c1ceb1b8a421fce293c9f18697a4974f_tn" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Bạn đã đăng ký tài khoản thành công</span>
+                                                <span class="header__notify-descriotion">Cảm ơn đã đồng hành cùng chúng tôi</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://cf.shopee.vn/file/c1ceb1b8a421fce293c9f18697a4974f_tn" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Bạn đã đăng nhập tài khoản thành công</span>
+                                                <span class="header__notify-descriotion">Cảm ơn đã đồng hành cùng chúng tôi</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://cf.shopee.vn/file/c1ceb1b8a421fce293c9f18697a4974f_tn" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Tài liệu cảu bạn đã đươc admin phê duyệt </span>
+                                                <span class="header__notify-descriotion">Cảm ơn đã đồng hành cùng chúng tôi</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="https://cdn-icons.flaticon.com/png/512/3177/premium/3177440.png?token=exp=1647765492~hmac=4708927f7cdcb10dedd9e9e2fddeacda" alt="avatar" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Huy Tùng</span>
+    
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li> 
+
+                        <!-- signup & login -->
+                        <!-- <li class="js-sign-up header__navbar-item">Đăng ký</li>
+                        <li class="js-log-in header__navbar-item">Đăng nhập</li> -->
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- header sort bar -->
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="#learning activities" class="header__sort-link">Hoạt động</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#academic news" class="header__sort-link">Tin tức</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#introduce" class="header__sort-link">Giới thiệu</a>
+                </li>
+            </ul>
+        </div> 
+        
+        <!-- nav bar -->
+
+
+        <!-- app__content -->
+        <div class="app__container">
+           
+            <marquee class="header__marquee hide-on-mobile-tablet">
+                <h3 class="header__marquee-text">Bạn càng đọc nhiều, bạn càng biết nhiều. Bạn càng học nhiều, bạn càng đi nhiều</h3>
+            </marquee> 
+            
+            <!-- IP link -->
+            <hr class="home-product-link" id="learning activities"> 
+            <div class="grid wide">
+                <div class="row app__content">
+                    <div class="col l-2 m-0 c-0">
+                        <div class="header__logo">
+                            <img src="./accsets/img/logo.jpg" alt="" class="header__logo-img">
+                            <span class="header__logo-name">
+                                Kiến thức số hunre
+                            </span>
+                        </div>
+
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+                            
+                            <!-- category-item--active -->
+                            <ul class="category-list">
+                                <li class="category-item ">
+                                    <a href="#learning activities" class="category-item__link">Hoạt động học tập</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#academic news" class="category-item__link">Tin tức học tập</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#introduce" class="category-item__link">Giới thiệu</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <!-- home-filter -->
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home-filter hide-on-mobile-tablet">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn ">Phổ biến</button>
+                            <button class="home-filter__btn btn ">Mới nhất</button>
+                            <!-- <button class="home-filter__btn btn btn--primary">Bán chạy</button> -->
+
+                            <div class="select-input">
+                                <span class="select-input__label">Từ khóa bất kỳ</span>
+                                <i class="select-input__icon ti-angle-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Tác giả</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Tác phẩm</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-curent">1</span>/2
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="#" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                        <i class="home-filter__page-icon ti-angle-left "></i>
+                                    </a>
+                                    <a href="#" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon ti-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- home-product -->
+                        <div class="home-product">
+                            <h3 class="home-product__header">Hoạt động học tập</h3>
+                            <div class="row home-product__content">
+                                <div class="col l-3 m-3 c-6 ">
+                                    <a class="home-product-item " href="#">
+                                        <img src="./accsets/img/tintuc.png" alt="" class="home-product-item__img">
+                                        <h4 class="home-product-item__name">Kiến Thức Số Hunre</h4>
+                                    </a>        
+                                </div>
+                                <div class="col l-3 m-3 c-6 ">
+                                    <a class="home-product-item " href="#">
+                                        <img src="./accsets/img/tintuc.png" alt="" class="home-product-item__img">
+                                        <h4 class="home-product-item__name">Kiến Thức Số Hunre</h4>
+                                    </a>        
+                                </div>
+                                <div class="col l-3 m-3 c-6 ">
+                                    <a class="home-product-item " href="#">
+                                        <img src="./accsets/img/tintuc.png" alt="" class="home-product-item__img">
+                                        <h4 class="home-product-item__name">Kiến Thức Số Hunre</h4>
+                                    </a>        
+                                </div>
+                                <div class="col l-3 m-3 c-6 ">
+                                    <a class="home-product-item " href="#" >
+                                        <img src="./accsets/img/tintuc.png" alt="" class="home-product-item__img">
+                                        <!-- IP link -->
+                                        <hr class="home-product-link" id="academic news"> 
+                                        <h4 class="home-product-item__name">Kiến Thức Số Hunre</h4>
+                                    </a>        
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="academic news" class="home-product">
+                            <h3 class="home-product__header">Tin tức học tập</h3>
+                            <div class="row home-product__content">
+                                <div class="col l-3 m-3 c-6 ">
+                                    <a class="home-product-item " href="#">
+                                        <img src="./accsets/img/tintuc.png" alt="" class="home-product-item__img">
+                                        <h4 class="home-product-item__name">Kiến Thức Số Hunre</h4>
+                                    </a>        
+                                </div>
+                                <div class="col l-3 m-3 c-6 ">
+                                    <a class="home-product-item " href="#">
+                                        <img src="./accsets/img/tintuc.png" alt="" class="home-product-item__img">
+                                        <h4 class="home-product-item__name">Kiến Thức Số Hunre</h4>
+                                    </a>        
+                                </div>
+                                <div class="col l-3 m-3 c-6 ">
+                                    <a class="home-product-item " href="#">
+                                        <img src="./accsets/img/tintuc.png" alt="" class="home-product-item__img">
+                                        <h4 class="home-product-item__name">Kiến Thức Số Hunre</h4>
+                                    </a>        
+                                </div>
+                                <div class="col l-3 m-3 c-6 ">
+                                    <a class="home-product-item " href="#">
+                                        <img src="./accsets/img/tintuc.png" alt="" class="home-product-item__img">
+                                       <!-- IP link -->
+                                        <hr class="home-product-link" id="introduce"> 
+                                        <h4 class="home-product-item__name">Kiến Thức Số Hunre</h4>
+                                    </a>        
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div  class="home-product">
+                            <h3 class="home-product__header">Giới thiệu</h3>
+                            <p class="home-product__text">
+                                Là một sinh viên, chúng tôi hiểu rõ những khó khăn trong học tập mà mỗi sinh viên đã gặp phải sau khi kết thúc một ngày học tập mệt nhoài ở trường. Các bạn mang theo trở về nhà những uẩn khúc , âu lo khi chưa kịp hiểu tường tận những kiến thức học trên lớp, chưa được hoàn chỉnh mà ở trường vì nhiều lí do về thời gian, về nhận thức,… các bạn chưa nắm vững hoàn toàn. Sự lo lắng của sinh viên về việc học khiến các bạn chẳng còn tâm trí để vui chơi, để khám phá những điều mới mẻ khác từ cuộc sống thú vị xung quanh. Để chia sẻ một phần công việc này, web được thành lập với một mong mỏi duy nhất là cung cấp một đội ngũ gia sư Giáo Viên - Sinh Viên dạy kèm tại nhà hiệu quả nhất, giảm thiểu những mệt mỏi, lo lắng và áp lực trong việc học mà bất cứ con trẻ nào cũng gặp phải.
+                            </p>
+
+                            <p class="home-product__text">
+                                Cung cấp dịch vụ dạy kèm tại nhà hi vọng, khi đến với dịch vụ dạy kèm của chúng tôi sẽ đáp ứng mọi yêu cầu về trình độ kiến thức, về thời gian học tập, về địa điểm học tập.
+                            </p>
+
+                            <p class="home-product__text">
+                                Chúng tôi luôn tâm niệm, truyền đạt kiến thức cho học trò là một công việc không bao giờ đơn giản, làm sao để các em tiếp thu nhanh chóng, nắm bắt vấn đề và đủ tự tin để ứng dụng vào bài tập là một hành trình vô cùng gian nan của cả người thầy lẫn học trò. Chúng tôi hiểu rằng, làm người thầy đứng trên bục giảng đã khó, làm một người thầy âm thầm hỗ trợ những khó khăn, vướng mắc của học trò sau những giờ học tại trường càng khó gấp bội. Với một người thầy, cô gia sư tại nhà chúng tôi hiểu rằng, sứ mệnh của chúng tôi không chỉ là truyền đạt về kiến thức, chúng tôi còn là một người bạn, một người anh, một người chị chia sẻ cùng các em học sinh tất cả những khó khăn, những băn khoăn bên ngoài sách vở, giúp các em định hướng được kế hoạch tương lai của mình.
+                            </p>
+
+                            <p class="home-product__text">
+                                Với công việc dạy kèm tại nhà 1 thầy + 1 trò, chúng tôi có điều kiện để hiểu rõ thực lực từng em, đưa ra từng giáo án cụ thể, phù hợp với năng lực để từ đó phát huy những ưu điểm và hạn chế tối đa những khuyết điểm mà các em mắc phải.
+                            </p>
+
+                        </div>
+
+                        <!-- pagination -->
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon ti-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--active">
+                                <a href="#" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon ti-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="grid wide ">
+                <div class="row footer__content">
+                    <div class="col l-3 m-3 c-6">
+                        <h3 class="footer__heading">Hỗ trợ</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Hướng dẫn </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-3 c-6">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-3 c-6">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-youtube"></i>
+                                    Youtube
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-3 m-3 c-6">
+                        <h3 class="footer__heading">Ứng dụng</h3>
+                        <div class="footer__download">
+                            <!-- <img src="/accsets/img/qr_code.png" alt="Download QR" class="footer__download-qr"> -->
+                            <div class="footer__download-app">
+                                <a href="#" class="footer__download-app-link">
+                                    <img src="accsets/img/google_play.png" alt="Google play" class="footer__download-app-img">
+                                </a>
+                                <a href="#" class="footer__download-app-link">
+                                    <img src="accsets/img/app_store.png" alt="App store" class="footer__download-app-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid wide">
+                <div class="footer__bottom">
+                    <p class="footer__text">Chúng tôi là những kẻ lang thang trên cánh đồng sáng tạo, dùng hương hoa cỏ để viết nên nội dung và gửi gió mang đến với những khách hàng yêu dấu! Hãy kết nối với chúng tôi nhé!</p>
+                </div>
+            </div>
+
+        </footer>
+        
+    </div>    
+    
+    <!-- Chatbox -->
+    <button class="container__boxchat-open" onclick="openBoxchat()"> 
+        <i class="container__boxchat-icon fab fa-facebook-messenger"></i> 
+    </button>
+    <div class="container__boxchat-body" id="boxchat__feedback">
+        <form action="" class="container__boxchat-form">
+            <h1 class="container__boxchat-heading">BOX CHAT</h1>                  
+            <textarea placeholder="Bạn hãy nhập lời nhắn..." name="boxchat__msg" required></textarea>
+            <button type="boxchat__submit" class="boxchat__btn">send</button>
+            <button type="boxchat__button" class="boxchat__btn container__boxchat-close" onclick="closeBoxchat()">close</button>
+        </form>
+    </div>
+    <!-- Endchatbox -->
+
+    <!-- modal -->
+    <!-- Tìm gia sư -->
+    {% comment %} <div class="modal js-modalfindtutor">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="tutors js-form-findtutor">
+                <div class="tutors__container">
+                    <div class="tutors__header">
+                        <h3 class="tutors__heading">
+                            TƯ VẤN TÌM GIA SƯ
+                        </h3>
+                    </div>
+                    <div class="tutors__form">
+                        <div class="tutors__group">
+                            <label for="" class="tutors__label">Họ tên</label>
+                            <input type="text" class="tutors__input" placeholder="Họ và tên">
+                        </div>
+                        <div class="tutors__group">
+                            <label for="" class="tutors__label">Số điện thoại</label>
+                            <input type="text" class="tutors__input" placeholder="Số điện thoại">
+                        </div>
+                        <div class="tutors__group">
+                            <label for="" class="tutors__label">Thời gian</label>
+                            <input type="text" class="tutors__input" placeholder="Thời gian bạn muốn học">
+                        </div> 
+                        <div class="tutors__group">
+                            <label for="" class="tutors__label">Môn học</label>
+                            <input type="text" class="tutors__input" placeholder="Môn học bạn muốn kèm (Tiếng anh,...)">
+                        </div>
+                        <div class="tutors__group">
+                            <label for="" class="tutors__label">Nội dung đăng ký</label>
+                            <input type="text" class="tutors__input" placeholder="Nôi dung muốn tư vấn gia sư (học lực,...)">
+                        </div>
+                    </div>
+    
+                    <div class="tutors__controls">
+                        <button class="js-closefindtutor btn auth-form__controls-back">Trở lại</button>
+                        <button class="btn btn--primary">Gửi đăng ký tư vấn</button>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </div> {% endcomment %}
+
+    <!-- Làm gia sư --> 
+    {% comment %} <div class="modal js-modalregistertutor">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="tutors js-form-registertutor">
+                <div class="tutors__container">
+                    <div class="tutors__header">
+                        <h3 class="tutors__heading">
+                            ĐĂNG KÝ LÀM GIA SƯ
+                        </h3>
+                    </div>
+                    <div class="tutors__form">
+                        <div class="tutors__group">
+                            <label for="" class="tutors__label">Họ tên</label>
+                            <input type="text" class="tutors__input" placeholder="Họ và tên">
+                        </div>
+                        <div class="tutors__group">
+                            <label for="" class="tutors__label">Số điện thoại</label>
+                            <input type="text" class="tutors__input" placeholder="Số điện thoại">
+                        </div>
+                        <div class="tutors__group">
+                            <label for="" class="tutors__label">Thời gian</label>
+                            <input type="text" class="tutors__input" placeholder="Thời gian bạn muốn dạy học">
+                        </div> 
+                        <div class="tutors__group">
+                            <label for="" class="tutors__label">Môn học</label>
+                            <input type="text" class="tutors__input" placeholder="Môn học bạn muốn dạy (tiếng anh,...)">
+                        </div>
+                        <div class="tutors__group">
+                            <label for="" class="tutors__label">Nội dung đăng ký</label>
+                            <input type="text" class="tutors__input" placeholder="Nôi dung muốn đăng ký gia sư (học lực,...)">
+                        </div>
+                    </div>
+    
+                    <div class="tutors__controls">
+                        <button class="js-closeregistertutor btn auth-form__controls-back">Trở lại</button>
+                        <button class="btn btn--primary">Gửi đăng ký</button>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </div> {% endcomment %}
+
+    <!-- Signup form -->
+    <div class="modal js-modalsignup">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth-form js-form-signup">    
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+            
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+            
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng kí, bạn đã đồng ý với chúng tôi về
+                            <span class="auth-form__text-link">điều khoản dịch vụ</span> & 
+                            <span class="auth-form__text-link">chính sách bảo mật</span>
+                        </p>
+                    </div>
+            
+                    <div class="auth-form__controls">
+                        <button class="js-closesignup btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                <!-- <div class="auth-form__socials">
+                    <a href="https://www.facebook.com/home.php" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span> 
+                    </a>
+                    <a href="#" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <img src="./accsets/img/google.png" alt="" class="auth-form__socials-img">
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div> -->
+            </div>     
+        </div>
+    </div> 
+
+    <!-- Login form -->
+    <div class="modal js-modallogin">
+        <div class="modal__overlay"></div>
+        <div class="modal__body"> 
+            <div class="auth-form js-form-login"> 
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+            
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+            
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="#" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="#" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div> 
+                    </div>
+            
+                    <div class="auth-form__controls">
+                        <button class="js-closelogin btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+        
+                <!-- <div class="auth-form__socials">
+                    <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span> 
+                    </a>
+                    <a href="#" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>             
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div> -->
+            </div>      
+        </div>
+    </div> 
+
+
+    <!-- js signup & login -->
+    <script>
+        //  js signup Mobile
+        const modalSignUpHeaderMobile = document.querySelector('.js-sign-up-mobile')
+        modalSignUpHeaderMobile.addEventListener('click', showSignUp)
+
+        // js signup PC
+        const modalSignUpHeader = document.querySelector('.js-sign-up')
+        const modalSignup = document.querySelector('.js-modalsignup')
+        const modalFormSignup = document.querySelector('.js-form-signup')
+        const modalCloseSignup = document.querySelector('.js-closesignup')
+
+        // Hàm hiển thị modal đăng ký (thêm class open vào modal)
+        function showSignUp() {
+            modalSignup.classList.add('open')
+        }
+
+        // Hàm ẩn modal đăng ký (gỡ bỏ class open của modal)
+        function hiddenSignUp() {
+            modalSignup.classList.remove('open')
+        }
+
+        //nghe hành vi click vào button đăng ký 
+        modalSignUpHeader.addEventListener('click', showSignUp)
+
+        //nghe hành vi click vào button close
+        modalCloseSignup.addEventListener('click', hiddenSignUp)
+
+        modalSignup.addEventListener('click', hiddenSignUp)
+
+        modalFormSignup.addEventListener('click', function(event) {
+            event.stopPropagation(modalFormSignup)
+        })
+
+        // js login mobile
+        const modalLogInHeaderMobile = document.querySelector('.js-log-in-mobile')
+        modalLogInHeaderMobile.addEventListener('click', showLogIn)
+
+        // js login
+        const modalLogInHeader = document.querySelector('.js-log-in')
+        const modalLogin = document.querySelector('.js-modallogin')
+        const modalFormLogin = document.querySelector('.js-form-login')
+        const modalCloseLogin = document.querySelector('.js-closelogin')
+
+        // Hàm hiển thị modal đăng nhập (thêm class open vào modal)
+        function showLogIn() {
+            modalLogin.classList.add('open')
+        }
+
+        // Hàm ẩn modal đăng nhập (gỡ bỏ class open của modal)
+        function hiddenLogIn() {
+            modalLogin.classList.remove('open')
+        }
+        
+        //nghe hành vi click vào button đăng nhập
+        modalLogInHeader.addEventListener('click', showLogIn)
+
+        //nghe hành vi click vào button close
+        modalCloseLogin.addEventListener('click', hiddenLogIn)
+
+        modalLogin.addEventListener('click', hiddenLogIn)
+
+        modalFormLogin.addEventListener('click', function(event) {
+            event.stopPropagation(modalFormLogin)
+        })   
+    </script>
+
+    <!-- js findtutors & registertutor-->
+<!--     
+    <script>
+        // js findtutor
+        // Mobile
+        const modalFindTutorHeaderMobile = document.querySelector('.js-find-tutor-mobile')
+        modalFindTutorHeaderMobile.addEventListener('click', showFindTutor)
+
+        // PC
+        const modalFindTutorHeader = document.querySelector('.js-find-tutor')
+        const modalFindtutor = document.querySelector('.js-modalfindtutor')
+        const modalFormFindtutor = document.querySelector('.js-form-findtutor')
+        const modalCloseFindtutor = document.querySelector('.js-closefindtutor')
+
+        function showFindTutor() {
+            modalFindtutor.classList.add('open')
+        }
+
+        function hiddenFindTutor() {
+            modalFindtutor.classList.remove('open')
+        }
+        
+        modalFindTutorHeader.addEventListener('click', showFindTutor)
+
+        modalCloseFindtutor.addEventListener('click', hiddenFindTutor)
+
+        modalFindtutor.addEventListener('click', hiddenFindTutor)
+
+        modalFormFindtutor.addEventListener('click', function(event) {
+            event.stopPropagation(modalFormFindtutor)
+        })  
+
+        // js registertutor
+        // mobile
+        const modalRegisterTutorrHeaderMobile = document.querySelector('.js-register-tutor-mobile')
+        modalRegisterTutorrHeaderMobile.addEventListener('click', showRegisterTutor)
+
+        // PC
+        const modalRegisterTutorrHeader = document.querySelector('.js-register-tutor')
+        const modalRegistertutor = document.querySelector('.js-modalregistertutor')
+        const modalFormRegistertutor = document.querySelector('.js-form-registertutor')
+        const modalCloseRegistertutor = document.querySelector('.js-closeregistertutor')
+
+        function showRegisterTutor() {
+            modalRegistertutor.classList.add('open')
+        }
+
+        function hiddenRegisterTutor() {
+            modalRegistertutor.classList.remove('open')
+        }
+        
+        modalRegisterTutorrHeader.addEventListener('click', showRegisterTutor)
+
+        modalCloseRegistertutor.addEventListener('click', hiddenRegisterTutor)
+
+        modalRegistertutor.addEventListener('click', hiddenRegisterTutor)
+
+        modalFormRegistertutor.addEventListener('click', function(event) {
+            event.stopPropagation(modalFormRegistertutor)
+        })  
+    </script> -->
+
+    <!--- js chatbox-->
+    <script>
+        /*Hàm Mở Form*/
+        function openBoxchat() {
+        document.getElementById("boxchat__feedback").style.display = "block";
+        }
+        /*Hàm Đóng Form*/
+        function closeBoxchat() {
+        document.getElementById("boxchat__feedback").style.display = "none";
+        }
+    </script>
+</body>
+</html>
